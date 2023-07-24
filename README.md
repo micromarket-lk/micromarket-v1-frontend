@@ -1,31 +1,76 @@
 <div style="text-align: center;">
-  <img src="backend.png" alt="MicroMarket Logo">
+  <img src="frontend.png" alt="MicroMarket Logo">
 </div>
 
-# MicroMarket: Revolutionizing Small Business Online Presence
+# Next.js 13 Frontend with Monolithic Architecture on Google Cloud Platform (GCP)
 
-MicroMarket is a game-changing web marketplace designed to empower small businesses in showcasing and hosting their products online. Our platform offers a highly accessible and feature-rich solution, powered by the cutting-edge technologies of Spring Boot with a Microservices architecture for the backend, and Next.js for the frontend.
+## Introduction
 
-## Key Points
+This documentation provides an overview of the frontend architecture for the application built using Next.js version 13. The frontend follows a monolithic architectural pattern and is deployed on Google Cloud Platform (GCP). Docker is used for containerization, and Kubernetes is employed for vertical scaling.
 
-- Traditional marketplaces often limit businesses to showcasing products only, but MicroMarket goes beyond that by providing a full-fledged marketplace experience.
-- Small businesses no longer need to create individual websites; MicroMarket eliminates the need for complex website development.
-- With MicroMarket, entrepreneurs can effortlessly showcase and manage their products, reaching a wider audience and expanding their brand presence.
+## Table of Contents
 
-## Benefits
+1. **Architecture Overview**
+    - 1.1. Technology Stack
+    - 1.2. Monolithic Architecture
+2. **Cloud Infrastructure**
+    - 2.1. Google Cloud Platform (GCP) Deployment
+    - 2.2. Kubernetes for Vertical Scaling
+3. **Containerization**
+    - 3.1. Docker Setup
+    - 3.2. Containerized Deployment
+4. **Deployment**
+    - 4.1. Google Cloud Platform (GCP) Deployment
+5. **Scalability**
+    - 5.1. Kubernetes for Vertical Scaling
 
-- Comprehensive solution for small business online presence.
-- Enhanced customer engagement through advanced marketplace functionality.
-- Streamlined product management and customization options.
-- Integrated marketing tools for increased brand visibility.
+## 1. Architecture Overview
 
-## Cutting-Edge Technology
+### 1.1. Technology Stack
 
-- **Backend**: Our backend is built using Spring Boot, a powerful and flexible framework that provides a robust foundation for microservices architecture. This enables seamless scalability, fault tolerance, and efficient handling of business logic.
-- **Frontend**: The frontend is crafted using Next.js, a popular React framework that offers server-side rendering, enhanced performance, and a delightful user experience. With Next.js, we ensure a responsive and dynamic interface for your customers.
+The frontend is built using the following technologies:
 
-## Join MicroMarket Today!
+- Next.js 13: A popular framework for building server-side rendered (SSR) React applications.
+- Google Cloud Platform (GCP): Used for hosting and managing various services.
+- Docker: Used for containerizing the frontend application.
+- Kubernetes: Ensures efficient vertical scaling of the application.
 
-Embrace MicroMarket and embark on a journey of growth and success! Our platform empowers small businesses to thrive in the digital landscape. Say goodbye to limitations and unleash your full potential with MicroMarket.
+### 1.2. Monolithic Architecture
 
-[Include MicroMarket logo or visual element here for added impact]
+The frontend follows a monolithic architecture, where the entire application is built as a single, cohesive unit. In this approach, all features and functionalities are tightly integrated, simplifying development and deployment. However, it may have limitations in terms of scalability and maintainability as the application grows.
+
+## 2. Cloud Infrastructure
+
+### 2.1. Google Cloud Platform (GCP) Deployment
+
+The frontend application is deployed on Google Cloud Platform (GCP), which provides a secure and scalable infrastructure for hosting web applications. GCP offers various services such as Compute Engine, App Engine, and Cloud Storage, which can be leveraged to ensure high availability and performance.
+
+### 2.2. Kubernetes for Vertical Scaling
+
+To manage and scale the frontend application effectively, Kubernetes is employed. Kubernetes allows vertical scaling by adjusting the resources allocated to the application based on demand. This ensures that the frontend can handle increased traffic and load without compromising performance.
+
+## 3. Containerization
+
+### 3.1. Docker Setup
+
+Docker is used to containerize the Next.js 13 frontend application. Containerization ensures that the application and its dependencies are packaged together, providing consistency across different environments.
+
+### 3.2. Containerized Deployment
+
+With Docker, the frontend application can be easily deployed as containers. These containers can be managed, scaled, and orchestrated using Kubernetes, providing a flexible and efficient deployment process.
+
+## 4. Deployment
+
+### 4.1. Google Cloud Platform (GCP) Deployment
+
+The containerized frontend application is deployed on Google Cloud Platform (GCP). GCP's App Engine or Compute Engine can be utilized to run the containers in a managed and scalable environment.
+
+## 5. Scalability
+
+### 5.1. Kubernetes for Vertical Scaling
+
+Kubernetes ensures vertical scalability by automatically adjusting the allocated resources for the frontend application based on utilization metrics. This allows the frontend to handle increased traffic and user demands efficiently.
+
+---
+
+This concludes the documentation for the frontend architecture of the application. It covers the technology stack, monolithic architectural pattern, deployment on Google Cloud Platform (GCP) with Kubernetes for vertical scaling, and containerization using Docker. The monolithic architecture provides simplicity during development, while Kubernetes ensures efficient scaling and resource management for the frontend application.
