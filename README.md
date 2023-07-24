@@ -71,6 +71,3 @@ The containerized frontend application is deployed on Google Cloud Platform (GCP
 
 Kubernetes ensures vertical scalability by automatically adjusting the allocated resources for the frontend application based on utilization metrics. This allows the frontend to handle increased traffic and user demands efficiently.
 
----
-
-This concludes the documentation for the frontend architecture of the application. It covers the technology stack, monolithic architectural pattern, deployment on Google Cloud Platform (GCP) with Kubernetes for vertical scaling, and containerization using Docker. The monolithic architecture provides simplicity during development, while Kubernetes ensures efficient scaling and resource management for the frontend application.
