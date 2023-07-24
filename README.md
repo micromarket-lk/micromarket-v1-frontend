@@ -1,5 +1,5 @@
 <div style="text-align: center;">
-  <img src="micromarket.png" alt="MicroMarket Logo">
+  <img src="backend.png" alt="MicroMarket Logo">
 </div>
 
 # MicroMarket: Revolutionizing Small Business Online Presence
